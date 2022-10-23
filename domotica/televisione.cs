@@ -25,6 +25,10 @@ namespace domotica
             modello = modello1;
             connettori = connettori1;
             risoluzione = risoluzione1;
+
+            canale = 0;
+            volume = 0;
+            stato = false;
         }
 
         public void setcanale(int cambio)
