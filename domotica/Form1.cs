@@ -99,5 +99,50 @@ namespace domotica
                 label1.Text = Convert.ToString(a);
             }
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            int canale_definito = int.Parse(label1.Text);
+            label1.Text = "0";
+            if (canale_definito < 1000)
+            {
+                t.setcanale(canale_definito);
+            }
+            else
+            {
+                MessageBox.Show("Il canale inserito supera il limite di 999, si prega di scegliere un canale disponibile");
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            string stato;
+            if (t.get_stato() == true)
+            {
+                stato = "on";
+            }
+            else
+            {
+                stato = "off";
+            }
+            string[] array = t.get_specifiche();
+            string produttore = array[0], modello = array[1], modalita = array[2];
+
+            textBox1.Text = "il produttore del telecomando è: " + produttore + "il modello del telecomando è: " + modello + "la modalita del telecomando è: " + modalita + "il canale su cui si è in questo momento è: " + Convert.ToString(t.getcanale()) + '\n' + "lo stato della televisione è: " + stato + '\n' + "il volume in questo momento impostato è: " + Convert.ToString(t.get_volume());
+        }
+        private void button13_Click(object sender, EventArgs e)
+        {
+            t.cambio_stato();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            t.volume_giu();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            t.volume_su();
+        }
     }
 }

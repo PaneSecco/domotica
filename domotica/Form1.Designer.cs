@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button17 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -55,63 +48,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(735, 276);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(149, 50);
-            this.button17.TabIndex = 73;
-            this.button17.Text = "imposta specifiche";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(636, 213);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 16);
-            this.label4.TabIndex = 72;
-            this.label4.Text = "modalità";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(796, 207);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(179, 22);
-            this.textBox4.TabIndex = 71;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(636, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
-            this.label3.TabIndex = 70;
-            this.label3.Text = "modello";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(796, 154);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 22);
-            this.textBox3.TabIndex = 69;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(636, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "produttore";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(796, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 22);
-            this.textBox2.TabIndex = 67;
-            // 
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.White;
@@ -122,6 +58,7 @@
             this.button16.Size = new System.Drawing.Size(75, 100);
             this.button16.TabIndex = 66;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 
@@ -133,6 +70,7 @@
             this.button15.Size = new System.Drawing.Size(75, 100);
             this.button15.TabIndex = 65;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button13
             // 
@@ -143,19 +81,21 @@
             this.button13.Size = new System.Drawing.Size(75, 75);
             this.button13.TabIndex = 64;
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(735, 556);
+            this.button12.Location = new System.Drawing.Point(739, 406);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(149, 79);
             this.button12.TabIndex = 63;
             this.button12.Text = "vedi specifiche/aggiorna";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(629, 357);
+            this.textBox1.Location = new System.Drawing.Point(633, 207);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(367, 180);
@@ -169,6 +109,7 @@
             this.button11.TabIndex = 61;
             this.button11.Text = "accetta";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // label1
             // 
@@ -294,13 +235,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 680);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button13);
@@ -327,14 +261,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button13;

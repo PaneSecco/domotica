@@ -27,15 +27,15 @@ namespace domotica
             risoluzione = risoluzione1;
         }
 
-        private void setcanale(int cambio)
+        public void setcanale(int cambio)
         {
             canale = cambio;
         }
-        private int getcanale()
+        public int getcanale()
         {
             return canale;
         }
-        private void cambio_stato()
+        public void cambio_stato()
         {
             if (stato == false)
             {
@@ -46,20 +46,20 @@ namespace domotica
                 stato = false;
             }
         }
-        private bool get_stato()
+        public bool get_stato()
         {
             return stato;
         }
-        private void volume_su()
+        public void volume_su()
         {
             volume = volume + 1;
         }
-        private void volume_giu()
+        public void volume_giu()
         {
             volume = volume - 1;
         }
 
-        private int get_volume()
+        public int get_volume()
         {
             return volume;
         }
