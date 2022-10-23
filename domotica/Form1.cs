@@ -29,52 +29,62 @@ namespace domotica
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string num = "1";
+            canale(num);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            string num = "2";
+            canale(num);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            string num = "3";
+            canale(num);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            string num = "4";
+            canale(num);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            string num = "5";
+            canale(num);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            string num = "6";
+            canale(num);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            string num = "7";
+            canale(num);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            string num = "8";
+            canale(num);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-
+            string num = "9";
+            canale(num);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-
+            string num = "0";
+            canale(num);
         }
         public void canale(string num)
         {
