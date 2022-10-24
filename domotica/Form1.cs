@@ -86,6 +86,7 @@ namespace domotica
             string num = "0";
             canale(num);
         }
+
         public void canale(string num)
         {
             if (label1.Text == "0")
@@ -107,6 +108,7 @@ namespace domotica
             if (canale_definito < 1000)
             {
                 t.setcanale(canale_definito);
+                controlla();
             }
             else
             {
@@ -115,6 +117,11 @@ namespace domotica
         }
 
         private void button12_Click(object sender, EventArgs e)
+        {
+            controlla();
+        }
+
+        private void controlla()
         {
             string stato;
             if (t.get_stato() == true)
@@ -130,19 +137,23 @@ namespace domotica
 
             textBox1.Text = "il produttore del telecomando è: " + produttore + "il modello del telecomando è: " + modello + "la modalita del telecomando è: " + modalita + "il canale su cui si è in questo momento è: " + Convert.ToString(t.getcanale()) + '\n' + "lo stato della televisione è: " + stato + '\n' + "il volume in questo momento impostato è: " + Convert.ToString(t.get_volume());
         }
+
         private void button13_Click(object sender, EventArgs e)
         {
             t.cambio_stato();
+            controlla();
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
             t.volume_giu();
+            controlla();
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             t.volume_su();
+            controlla();
         }
     }
 }

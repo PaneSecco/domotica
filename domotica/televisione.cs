@@ -19,6 +19,21 @@ namespace domotica
         private string[] connettori;
         private string risoluzione;
 
+        private float prezzo;
+
+        public float Prezzo
+        {
+            set
+            {
+                return prezzo;
+            }
+
+            get
+            {
+                prezzo=value;
+            }
+        }
+
         public televisione(string produttore1, string modello1, string [] connettori1, string risoluzione1)
         {
             produttore = produttore1;   
